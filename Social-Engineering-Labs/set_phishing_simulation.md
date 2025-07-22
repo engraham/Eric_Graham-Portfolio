@@ -28,3 +28,69 @@ This shows how easily attackers exploit human weaknesses to gain an initial foot
 
 ```bash
 sudo setoolkit
+
+Choose 1) Social-Engineering Attacks
+
+Then 2) Website Attack Vectors
+
+Then 3) Credential Harvester Attack Method
+
+Then 2) Site Cloner
+
+2️⃣ Clone a Target Site
+For demonstration, clone a simple login page (e.g., http://testphp.vulnweb.com/login.php).
+
+Enter your local IP as the listener.
+
+SET clones the site and starts a web server on port 80.
+
+3️⃣ Craft a Fake Email
+Write a realistic phishing email:
+
+plaintext
+Copy
+Edit
+Subject: Action Required — Security Update
+
+Hi,
+
+Please verify your account to maintain access. Log in here:
+http://<attacker-ip>
+
+Thank you,
+IT Support
+This is just an example — do not send it to real users.
+
+4️⃣ Simulate Victim Click
+Open a browser on your test victim VM.
+
+Click the fake link → fake login page.
+
+Enter test credentials: testuser / password123.
+
+5️⃣ Capture Credentials
+SET console shows captured POST request:
+
+less
+Copy
+Edit
+[+] Username: testuser
+[+] Password: password123
+Screenshot this evidence:
+
+Result
+✅ Credentials successfully captured via cloned phishing site.
+✅ Demonstrates real-world risk of poor user awareness & missing email protections.
+
+Mitigation & Recommendations
+Deploy email filtering with phishing detection.
+
+Enforce Multi-Factor Authentication (MFA).
+
+Train users on phishing awareness with regular simulations.
+
+Use strong domain & DMARC/SPF/DKIM records to prevent spoofing.
+
+References
+Social-Engineering Toolkit (SET)
+
