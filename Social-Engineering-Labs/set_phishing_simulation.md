@@ -28,6 +28,9 @@ This shows how easily attackers exploit human weaknesses to gain an initial foot
 
 ```bash
 sudo setoolkit
+```
+
+![setoolkit](screenshots/setoolkit/sudo_setoolkit.png)
 
 Choose 1) Social-Engineering Attacks
 
