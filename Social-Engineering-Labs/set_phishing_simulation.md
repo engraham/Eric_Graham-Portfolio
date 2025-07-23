@@ -50,11 +50,11 @@ Then 2) Site Cloner
 2️⃣ Clone a Target Site
 For demonstration, clone a simple login page (e.g., http://testphp.vulnweb.com/login.php).
 
-![setoolkit](/Pentest-Labs/screenshots/setoolkit/web_clone_w_ip.png)
-
 Enter your local IP as the listener.
 
 SET clones the site and starts a web server on port 80.
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/web_clone_w_ip.png)
 
 3️⃣ Craft a Fake Email
 Write a realistic phishing email:
@@ -64,14 +64,17 @@ Copy
 Edit
 Subject: Action Required — Security Update
 
-Hi user,
+Hello user,
 
 Please verify your account to maintain access. Log in here:
 http://<attacker-ip>
 
 Thank you,
+
 IT Support
 
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/fake_email.png)
 
 
 4️⃣ Simulate Victim Click
@@ -84,12 +87,11 @@ Enter test credentials: test / test.
 5️⃣ Capture Credentials
 SET console shows captured POST request:
 
-less
-Copy
-Edit
 [+] Username: test
 [+] Password: test
 Screenshot this evidence:
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/full_output.png)
 
 Result
 ✅ Credentials successfully captured via cloned phishing site.
