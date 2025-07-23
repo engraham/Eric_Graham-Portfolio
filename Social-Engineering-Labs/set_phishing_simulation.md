@@ -52,21 +52,22 @@ Copy
 Edit
 Subject: Action Required — Security Update
 
-Hi,
+Hi user,
 
 Please verify your account to maintain access. Log in here:
 http://<attacker-ip>
 
 Thank you,
 IT Support
-This is just an example — do not send it to real users.
+
+
 
 4️⃣ Simulate Victim Click
 Open a browser on your test victim VM.
 
 Click the fake link → fake login page.
 
-Enter test credentials: testuser / password123.
+Enter test credentials: test / test.
 
 5️⃣ Capture Credentials
 SET console shows captured POST request:
@@ -74,8 +75,8 @@ SET console shows captured POST request:
 less
 Copy
 Edit
-[+] Username: testuser
-[+] Password: password123
+[+] Username: test
+[+] Password: test
 Screenshot this evidence:
 
 Result
