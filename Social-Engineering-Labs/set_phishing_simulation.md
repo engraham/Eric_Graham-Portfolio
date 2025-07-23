@@ -29,20 +29,28 @@ This shows how easily attackers exploit human weaknesses to gain an initial foot
 ```bash
 sudo setoolkit
 ```
-
-![setoolkit](screenshots/setoolkit/sudo_setoolkit.png)
-
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/sudo_setoolkit.png)
 
 Choose 1) Social-Engineering Attacks
 
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/soc_eng_attack.png)
+
 Then 2) Website Attack Vectors
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/web_att_vec.png)
 
 Then 3) Credential Harvester Attack Method
 
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/cred_harv_att_method.png)
+
 Then 2) Site Cloner
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/site_cloner.png)
 
 2️⃣ Clone a Target Site
 For demonstration, clone a simple login page (e.g., http://testphp.vulnweb.com/login.php).
+
+![setoolkit](/Pentest-Labs/screenshots/setoolkit/web_clone_w_ip.png)
 
 Enter your local IP as the listener.
 
