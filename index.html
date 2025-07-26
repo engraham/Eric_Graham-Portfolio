@@ -78,12 +78,17 @@
       color: #00ffcc;
       font-size: 1.1rem;
       text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a.lab-link:visited {
+      color: #00ffcc;
     }
 
-    .lab-link:hover {
-      animation: pulse 1s infinite;
+    a.pulse:hover {
+      animation: pulse 1.2s ease-in-out 1;
       color: #33ffee;
-      text-decoration: underline;
+      text-shadow: 0 0 10px #00ffcc;
     }
 
     @keyframes pulse {
