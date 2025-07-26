@@ -86,17 +86,27 @@
     }
 
     a.pulse:hover {
+      animation: pulse 1.2s ease-in-out infinite;
+      color: #33ffee;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    .pulse:hover {
       animation: pulse 1.2s ease-in-out 1;
       color: #33ffee;
       text-shadow: 0 0 10px #00ffcc;
     }
 
-    @keyframes pulse {
-      0% { text-shadow: 0 0 0px #00ffcc; }
-      50% { text-shadow: 0 0 10px #00ffcc; }
-      100% { text-shadow: 0 0 0px #00ffcc; }
+    .pulse {
+      text-shadow: 0 0 5px #00ffcc;
+      transition: color 0.3s ease;
     }
 
+    @keyframes pulse {
+      0% { text-shadow: 0 0 5px #00ffcc; }
+      50% { text-shadow: 0 0 20px #00ffcc; }
+      100% { text-shadow: 0 0 5px #00ffcc; }
+    }
 
     footer {
       text-align: center;
@@ -130,12 +140,12 @@
 
   <section id="intro">
     <p>
-      Welcome to my cybersecurity portfolio.<br> 
-      I'm Eric Graham — a former web developer turned hands-on penetration tester. After nearly a decade building software, I’ve shifted gears to break it — and understand security from the attacker's perspective.<br>
+      Welcome to my cybersecurity portfolio.<br><br> 
+      I'm Eric Graham — a former web developer turned hands-on penetration tester. After nearly a decade building software, I’ve shifted gears to break it — and understand security from the attacker's perspective.<br><br>
 
-This portfolio is a growing collection of real-world offensive security labs I’ve completed, each one documented with the same care and detail I’d bring to a professional pentest report.<br>
+This portfolio is a growing collection of real-world offensive security labs I’ve completed, each one documented with the same care and detail I’d bring to a professional pentest report.<br><br>
 
-I’m proud of every exploit, every mistake, and every root shell — they all reflect my passion for AppSec, my discipline to self-teach, and my drive to contribute meaningfully to a security team.<br>
+I’m proud of every exploit, every mistake, and every root shell — they all reflect my passion for AppSec, my discipline to self-teach, and my drive to contribute meaningfully to a security team.<br><br>
 
 Dig into the labs below — and if you’re looking for a junior pentester who already thinks like an attacker, I’m ready.
     </p>
