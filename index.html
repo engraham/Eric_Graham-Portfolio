@@ -49,6 +49,21 @@
       border-top: 1px solid #333;
       padding-top: 1rem;
     }
+    .nav-bar {
+        font-size: 1.5em; /* like <h2> */
+        font-weight: bold;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .nav-bar span,
+      .nav-bar a {
+        color: #00ffcc;
+        text-decoration: none;
+      }
+
   </style>
 </head>
 <body>
@@ -58,11 +73,14 @@
     <p>AppSec & Penetration Testing Labs | Projects | Documentation</p>
   </header>
 
-  <nav>
-    <h2>AppSec Labs</h2> |
-    <h2>PenTest Labs</h2>
-    <h2>README</h2>
+  <nav class="nav-bar">
+    <span>AppSec Labs</span>
+    <span>|</span>
+    <span>PenTest Labs</span>
+    <span>|</span>
+    <a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a>
   </nav>
+
 
   <section id="appsec-labs">
     <h2>AppSec Labs</h2>
