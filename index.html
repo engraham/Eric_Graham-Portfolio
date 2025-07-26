@@ -3,111 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eric Graham Cybersecurity Portfolio</title>
+  <title>Eric Graham | Cybersecurity Portfolio</title>
   <style>
-    /* Base styles */
     body {
-      background-color: #121212;
-      color: #eee;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem auto;
-      max-width: 900px;
-      line-height: 1.6;
-      padding: 0 1rem;
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 2rem;
     }
-    a {
-      color: #61dafb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1, h2 {
-      color: #bb86fc;
-      margin-top: 1.5rem;
-    }
+
     header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cccccc;
+      margin-top: 0.5rem;
+    }
+
     nav {
-      margin-bottom: 3rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
+
     nav a {
+      color: #00ffcc;
+      text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
     }
-    section {
-      margin-bottom: 3rem;
+
+    nav a:hover {
+      text-decoration: underline;
     }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #00ffcc;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a.lab-link {
+      color: #00ffcc;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    a.lab-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #555;
       margin-top: 4rem;
-      border-top: 1px solid #333;
-      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
     }
-    .nav-bar {
-        font-size: 1.5em; /* like <h2> */
-        font-weight: bold;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-      }
-      .nav-bar span,
-      .nav-bar a {
-        color: #00ffcc;
-        text-decoration: none;
-      }
 
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Eric Graham Cybersecurity Portfolio</h1>
-    <p>AppSec & Penetration Testing Labs | Projects | Documentation</p>
+    <h1>Eric Graham</h1>
+    <p>Aspiring Penetration Tester | AppSec Enthusiast</p>
   </header>
 
-  <nav class="nav-bar">
-    <span>AppSec Labs</span>
-    <span>|</span>
-    <span>PenTest Labs</span>
-    <span>|</span>
-    <a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a>
+  <nav>
+    <a href="#appsec">AppSec Labs</a> |
+    <a href="#pentest">PenTest Labs</a> |
+    <a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank" rel="noopener noreferrer">About This Portfolio</a>
   </nav>
 
+  <section id="intro">
+    <p>
+      Welcome to my cybersecurity portfolio. I'm a web developer transitioning into penetration testing and application security. This page showcases my hands-on labs and projects, each with detailed write-ups hosted on GitHub.
+    </p>
+  </section>
 
-  <section id="appsec-labs">
+  <section id="appsec">
     <h2>AppSec Labs</h2>
     <ul>
-      <li><a href="https://github.com/engraham/appsec-labs" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-      <li><a href="https://github.com/engraham/appsec-labs/tree/main/lab1" target="_blank" rel="noopener noreferrer">Lab 1</a></li>
-      <li><a href="https://github.com/engraham/appsec-labs/tree/main/lab2" target="_blank" rel="noopener noreferrer">Lab 2</a></li>
-      <!-- Add more labs as you like -->
+      <li><a class="lab-link" href="#" target="_blank">Lab 1 – XXE Injection (Coming Soon)</a></li>
+      <li><a class="lab-link" href="#" target="_blank">Lab 2 – Broken Auth (Coming Soon)</a></li>
+      <!-- Add more as you finish -->
     </ul>
   </section>
 
-  <section id="pentest-labs">
+  <section id="pentest">
     <h2>PenTest Labs</h2>
-      <li><a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/metasploitable2_vsftpd-samba.md" target="_blank" rel="noopener noreferrer">metasploitable2_vsftpd-samba.md</a></li>
-      <li><a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/VulnHub%20—%20DC.md" target="_blank" rel="noopener noreferrer">VulnHub — DC.md</a></li>
-      <li><a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/set_phishing_simulation.md" target="_blank" rel="noopener noreferrer">set_phishing_simulation.md</a></li>
-      <!-- Add more labs as you like -->
+    <ul>
+      <li>
+        <a class="lab-link" href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/metasploitable2_vsftpd-samba.md" target="_blank">
+          Metasploitable2 – VSFTPD & Samba Exploitation
+        </a>
+        <br/>
+        <small>
+          Exploited vsftpd 2.3.4 for remote shell access. Escalated privileges via Samba misconfig. Includes full recon, exploitation, and post-exploitation steps.
+        </small>
+      </li>
+      <!-- Add more pentest labs here -->
     </ul>
-  </section>
-
-  <section id="readme">
-    <h2>README & Documentation</h2>
-    <p><a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank" rel="noopener noreferrer">Main README File</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Eric G. All rights reserved.
+    <p>📧 <a href="mailto:your.email@example.com">your.email@example.com</a> |
+       💼 <a href="https://github.com/engraham" target="_blank">GitHub</a> |
+       🔗 <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+    </p>
+    <p>© 2025 Eric Graham</p>
   </footer>
 
 </body>
