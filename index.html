@@ -80,9 +80,18 @@
       text-decoration: none;
     }
 
-    a.lab-link:hover {
+    .lab-link:hover {
+      animation: pulse 1s infinite;
+      color: #33ffee;
       text-decoration: underline;
     }
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 0px #00ffcc; }
+      50% { text-shadow: 0 0 10px #00ffcc; }
+      100% { text-shadow: 0 0 0px #00ffcc; }
+    }
+
 
     footer {
       text-align: center;
