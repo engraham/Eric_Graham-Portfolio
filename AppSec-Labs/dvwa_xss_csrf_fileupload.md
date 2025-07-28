@@ -1,9 +1,9 @@
 # Lab Report: DVWA - Chaining XSS, CSRF, and File Upload for RCE
 
-**Author**: Eric Graham 
-**Date**: 07/28/2025
-**Target**: Damn Vulnerable Web App (DVWA) - `http://[DVWA_IP]`  
-**Security Level**: Low  
+- **Author**: Eric Graham 
+- **Date**: 07/28/2025
+- **Target**: Damn Vulnerable Web App (DVWA) - `http://[DVWA_IP]`  
+- **Security Level**: Low  
 
 ---
 
