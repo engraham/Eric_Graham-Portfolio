@@ -1,5 +1,9 @@
 # Lab Report: DVWA - Chaining XSS, CSRF, and File Upload for RCE
 
+- Lab Type: Web Application Exploitation  
+- Skill Level: Beginner–Intermediate  
+- Focus: XSS, CSRF, File Upload, RCE  
+---
 - **Author**: Eric Graham 
 - **Date**: 07/28/2025
 - **Target**: Damn Vulnerable Web App (DVWA) - `http://[DVWA_IP]`  
