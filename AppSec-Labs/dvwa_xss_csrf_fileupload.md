@@ -39,8 +39,9 @@
 4. **Admin Trigger**: When an admin views the XSS-infected page, their cookies are sent to your server.
 
 ### Evidence
-- [SCREENSHOT: XSS payload in DVWA]
-- [SCREENSHOT: Captured cookies in `cookies.txt`]
+![cookie_steal_scrit](/screenshots/dvwa/cookie_steal_script.png)
+
+![php server output](/screenshots/dvwa/server_cookietxt_steal.png)
 
 ---
 
@@ -50,8 +51,9 @@
 2. Refresh the page to gain admin access.
 
 ### Evidence
-- [SCREENSHOT: Cookie injection via Cookie Editor]
-- [SCREENSHOT: Admin dashboard post-hijacking]
+![cookie_editor](/screenshots/dvwa/cookie_hijack.png)
+
+![dvwa hijacked login](/screenshots/dvwa/hijack_login.png)
 
 ---
 
@@ -68,8 +70,13 @@
 3. Trick the admin into visiting `http://[ATTACKER_IP]:8000/csrf.html`.
 
 ### Evidence
-- [SCREENSHOT: CSRF payload execution in Network Tab]
-- [SCREENSHOT: Successful login with new password `hacked`]
+![csrf email payload](/screenshots/dvwa/email_payload.png)
+
+![python3](/screenshots/dvwa/server_rcvd_csrf.png)
+
+![sql database](/screenshots/dvwa/database_pw_proof.png)
+
+![Hashes.com](/screenshots/dvwa/pw_chng_proof.png)
 
 ---
 
@@ -88,8 +95,7 @@
 5. Access the uploaded shell at `http://[DVWA_IP]/hackable/uploads/shell.php`.
 
 ### Evidence
-- [SCREENSHOT: Malicious file upload]
-- [SCREENSHOT: Netcat reverse shell session]
+![netcat](/screenshots/dvwa/rev_shell_output.png)
 
 ---
 
@@ -113,7 +119,8 @@ This lab demonstrated how chaining low-severity vulnerabilities (XSS â†’ CSRF â†
 
 **Appendix**:  
 - [Full PHP reverse shell code]  
-- [Burp Suite request/response samples]  
+- [Burp Suite request/response samples]
 
+---
 
 ~ Eric Graham
