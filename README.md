@@ -1,7 +1,7 @@
 # 🕵️ Eric Graham | Cybersecurity Portfolio
 
 Welcome! 👋  
-I’m **Eric Graham**, an aspiring **Junior Penetration Tester** & **Application Security professional** — actively proving my real-world offensive and defensive skills through *hands-on labs* and *client-style reports*.
+I’m **Eric Graham**, an aspiring **Junior Penetration Tester** with a strong focus on offensive security. This portfolio showcases real-world attack simulations, full exploit chains, and professional-quality reporting.
 
 ---
 
@@ -9,30 +9,30 @@ I’m **Eric Graham**, an aspiring **Junior Penetration Tester** & **Application
 
 This repo showcases my practical security skills through **5 complete labs**:
 
-- **✅ Infrastructure Exploitation:** Classic Metasploitable2 FTP & Samba
-- **✅ Kill Chain & Privilege Escalation:** VulnHub DC-1, full chain to root
-- **✅ Web App Exploitation:** OWASP DVWA — XSS, CSRF, File Upload, RCE
-- **✅ Modern API Testing:** JWT insecure implementation, API logic flaw
-- **✅ Social Engineering:** Phishing campaign using Social Engineering Toolkit (SET)
+- ** Infrastructure Exploitation:** Classic Metasploitable2 FTP & Samba
+- ** Kill Chain & Privilege Escalation:** VulnHub DC-1, full chain to root
+- ** Web App Attacks:** OWASP DVWA – XSS, CSRF, file upload bypass, RCE _Includes full AppSec PDF report, screenshots, and mitigation_
+- ** Modern API Testing:** JWT insecure implementation, API logic flaw
+- ** Social Engineering:** Phishing campaign using Social Engineering Toolkit (SET)
 
 Each lab includes:
-- Recon & enumeration
-- Exploitation with real tools
+- Structured recon, enumeration, and exploitation methodology
+- Real-world tools: Nmap, Burp, Metasploit, Netcat, etc.
 - Post-exploitation evidence
-- Screenshots of commands & shells
+- Screenshots of payloads, shells, and proof of access
 - Clear risk, impact, and mitigation
 - Linked PDF reports (client-ready)
 
 ---
 
-## ⚙️ Tools & Skills Used
+- ## ⚙️ Tools & Techniques
 
-- **OSINT & Recon:** Nmap, Gobuster, Nikto
-- **Exploitation:** Metasploit, Netcat, custom payloads
-- **Web Testing:** Burp Suite, OWASP ZAP
-- **Social Engineering:** SET
-- **Reporting:** Clear markdown write-ups + PDF deliverables
-- **Tactics Mapped:** MITRE ATT&CK references where relevant
+- **Recon & Scanning:** Nmap, Gobuster, Nikto
+- **Web Exploitation:** Burp Suite, OWASP ZAP, manual fuzzing
+- **Shells & Payloads:** Metasploit, Netcat, Bash/Reverse shells
+- **Social Engineering:** Social Engineering Toolkit (SET)
+- **Reporting:** Markdown w/ embedded images, LaTeX-generated PDFs
+- **Tactics Referenced:** MITRE ATT&CK where applicable
 
 ---
 
@@ -50,9 +50,8 @@ This portfolio:
 
 ```plaintext
 Eric-Portfolio/
- ├── Pentest-Labs/ → Infrastructure & chain exploits
  ├── AppSec-Labs/ → Modern web & API exploits
- ├── Social-Engineering-Labs/ → Phishing attack simulation
+ ├── Pentest-Labs/ → Infrastructure & chain exploits & Social-Engineering-Labs/ → Phishing attack simulat
  ├── screenshots/ → All lab evidence
  ├── README.md → This overview
 ````
@@ -68,13 +67,15 @@ For educational demonstration only.
 
 ---
 
-## 📑 Example Client Reports
+## 📑 Sample Client Reports
 
-Each chain or multi-step lab includes a client-style PDF:
+Each lab includes a full PDF report — the kind you’d hand to a client or security manager:
 
-* [VulnHub DC-1 Report](Pentest-Labs/dc1_vulnhub_report.pdf)
-* [DVWA Web App Report](AppSec-Labs/dvwa_report.pdf)
-* [SET Phishing Report](Social-Engineering-Labs/set_phishing_report.pdf)
+- [🔗 VulnHub DC-1 Report](Pentest-Labs/VulnHub-DC-1-Report.pdf)
+- [🔗 DVWA Web App Report](AppSec-Labs/DVWA_Xss_CSRF_Fileupload-Report.pdf)
+- [🔗 SET Phishing Simulation Report](Pentest-Labs/Social-Engineering-Toolkit-Phishing-Simulation-Report.pdf)
+- [🔗 Metasploitable2 FTP/Samba Report](Pentest-Labs/Metasploitable2-vsftpd-Samba-Exploitation-Report.pdf)
+
 
 ---
 
