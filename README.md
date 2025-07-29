@@ -1,6 +1,7 @@
 # 🕵️ Eric Graham | Cybersecurity Portfolio
 
 Welcome! 👋  
+
 I’m **Eric Graham**, an aspiring **Junior Penetration Tester** with a strong focus on offensive security. This portfolio showcases real-world attack simulations, full exploit chains, and professional-quality reporting.
 
 ---
