@@ -8,7 +8,7 @@ I’m **Eric Graham**, an aspiring **Junior Penetration Tester** with a strong f
 
 ## 🔍 What You’ll Find Here
 
-This repo showcases my practical security skills through **5 complete labs**:
+This repo showcases my practical security skills through **4 complete labs**:
 
 - ** Infrastructure Exploitation:** Classic Metasploitable2 FTP & Samba
 - ** Kill Chain & Privilege Escalation:** VulnHub DC-1, full chain to root
