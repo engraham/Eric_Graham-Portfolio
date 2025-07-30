@@ -1,5 +1,6 @@
 # 🕵️ Eric Graham | Cybersecurity Portfolio
 
+
 Welcome! 👋  
 
 I’m **Eric Graham**, an aspiring **Junior Penetration Tester** with a strong focus on offensive security. This portfolio showcases real-world attack simulations, full exploit chains, and professional-quality reporting.
@@ -86,6 +87,8 @@ I’m actively seeking: **Junior Pentester / Security Analyst / AppSec** opportu
 Connect with me on [LinkedIn](#) https://www.linkedin.com/in/eric-graham-91b017a0/ or email me at **ericngraham00@gmail.com** to discuss my work!
 
 Thank you for visiting!
+
+![Views](https://img.shields.io/badge/dynamic/json?label=Portfolio%20Views&query=value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fericgraham-portfolio%2Fvisits&color=0abde3&style=flat-square&logo=github)
 ---
 
 *— Eric Graham*
