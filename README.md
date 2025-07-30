@@ -88,7 +88,7 @@ Connect with me on [LinkedIn](#) https://www.linkedin.com/in/eric-graham-91b017a
 
 Thank you for visiting!
 
-![Views](https://img.shields.io/badge/dynamic/json?label=Portfolio%20Views&query=value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fericgraham-portfolio%2Fvisits&color=0abde3&style=flat-square&logo=github)
+
 ---
 
 *— Eric Graham*
