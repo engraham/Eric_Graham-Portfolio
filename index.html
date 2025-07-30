@@ -123,6 +123,20 @@
       text-decoration: underline;
      }
 
+    #visitor-counter {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: rgba(20, 20, 20, 0.85);
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.4);
+      z-index: 9999;
+    }
+    #visitor-counter img {
+      height: 22px;
+    }
+
 
     footer {
       text-align: center;
@@ -226,6 +240,12 @@ While my current strength is in offensive techniques, <br><br>I’m focused on u
     </p>
     <p>© 2025 Eric Graham</p>
   </footer>
+
+  <div id="visitor-counter">
+  <img src="https://img.shields.io/badge/dynamic/json?label=Portfolio%20Views&query=value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fericgraham-portfolio%2Fvisits&color=0abde3&style=flat-square&logo=github" 
+       alt="Portfolio View Counter">
+  </div>
+
 
 </body>
 </html>
