@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploiting VulnHub DC-1 | Eric Graham</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    article { max-width: 700px; margin: 0 auto; padding: 2rem; }
+    pre { 
+      background: #111; 
+      padding: 1rem; 
+      overflow-x: auto;
+      border-left: 3px solid #00ffcc;
+    }
+    img { 
+      max-width: 100%; 
+      border: 1px solid #00ff00;
+      margin: 1rem 0;
+    }
+    h2 { border-bottom: 2px solid #00ffcc; }
+    .annotation { color: #ff5555; font-style: italic; }
+    .lesson { background: #112211; padding: 1rem; border-left: 3px solid #ff5555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eric Graham</h1>
+    <p>Penetration Testing & Application Security Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="/#appsec">AppSec Labs</a> |
+    <a href="/#pentest">PenTest Labs</a> |
+    <a href="/blog">Blog</a> |
+    <a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank">About</a>
+  </nav>
+
+  <article>
+    <h1>From Black Box to Root: Exploiting VulnHub DC-1</h1>
+    <p><em>July 2025</em> | <strong>Skills: Enumeration, Web Exploitation, Privilege Escalation</strong></p>
+
+    <h2>Why This Lab Matters</h2>
+    <p>
+      DC-1 simulates a real-world black-box pentest: no IPs, no credentials, just a network. 
+      As a junior security professional, I used this lab to bridge <strong>offensive techniques</strong> (exploiting Drupal) 
+      with <strong>defensive insights</strong> (patching, hardening)—a mindset valuable for both pentesting and AppSec roles.
+    </p>
+
+    <h2>Threat Model</h2>
+    <ul>
+      <li><strong>Attack Surface</strong>: Drupal CMS (unauthenticated RCE via CVE-2018-7600).</li>
+      <li><strong>Impact</strong>: Full system compromise (root → data exfiltration).</li>
+      <li><strong>Likelihood</strong>: High (public exploit, no auth required).</li>
+    </ul>
+
+    <h2>Key Tools</h2>
+    <ul>
+      <li><strong>Discovery</strong>: Nmap, Netdiscover</li>
+      <li><strong>Exploitation</strong>: Metasploit (Drupalgeddon2)</li>
+      <li><strong>Post-Exploit</strong>: Linux privilege escalation checks</li>
+    </ul>
+
+    <h2>The Exploitation Chain</h2>
+    <h3>1. Recon → Finding the Target</h3>
+    <p>
+      Used <code>netdiscover</code> to locate the VM, then ran a full <code>nmap -sV</code> scan:
+    </p>
+    <pre><code>nmap -sV -A 192.168.x.x</code></pre>
+    <p><em>Note: IPs in this lab were assigned locally via VMware NAT.</em></p>
+    <img src="/blog/assets/dc1-nmap-scan.png" alt="Nmap scan results">
+    <p class="annotation">↑ Drupal version 7.x (CVE-2018-7600 vulnerable) found on port 80.</p>
+
+    <h3>2. Initial Foothold → Drupalgeddon2</h3>
+    <p>
+      Drupalgeddon2 (CVE-2018-7600) was chosen because it allows RCE without credentials—critical in black-box tests where the attack surface is unknown.
+    </p>
+    <pre><code>use exploit/unix/webapp/drupal_drupalgeddon2
+set RHOSTS 192.168.x.x
+run</code></pre>
+    <img src="/blog/assets/dc1-meterpreter.png" alt="Meterpreter session">
+    <p class="annotation">↑ Meterpreter session opened after exploiting Drupal.</p>
+
+    <h3>3. Privilege Escalation → Root Access</h3>
+    <p>
+      Escalated to root via misconfigured permissions and retrieved the final flag:
+    </p>
+    <pre><code>cat /root/thefinalflag.txt</code></pre>
+
+    <!-- Updated "Lessons Learned" -->
+    <h2>Lessons Learned</h2>
+    <div class="lesson">
+      <h3>For Pentesters</h3>
+      <p><strong>1. Brute-forcing isn’t always the answer:</strong> I wasted time on Hydra before realizing the Drupal exploit was more efficient. <em>Lesson: Always check for public exploits first.</em></p>
+      
+      <h3>For AppSec Analysts</h3>
+      <p><strong>2. Patch prioritization matters:</strong> This lab reinforced why unpatched CMS platforms are <em>critical</em> vulnerabilities. <em>Lesson: Asset inventory + version tracking are defensive priorities.</em></p>
+      
+      <h3>For Both Roles</h3>
+      <p><strong>3. Document as you go:</strong> Screenshots and notes saved hours when writing this report. <em>Lesson: Evidence is key for reports and remediation.</em></p>
+    </div>
+
+    <div class="cta">
+      <p><strong>Want the full technical report?</strong> <a href="/assets/pdf/VulnHub-DC-1-Report.pdf">Download the PDF</a>.</p>
+    </div>
+  </article>
+
+  <footer>
+    <p>📧 <a href="mailto:ericngraham00@gmail.com">Email</a> | 💼 <a href="https://github.com/engraham">GitHub</a> | 🔗 <a href="https://linkedin.com/in/eric-graham">LinkedIn</a></p>
+    <p>© 2025 Eric Graham</p>
+  </footer>
+</body>
+</html>
