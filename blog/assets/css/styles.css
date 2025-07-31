@@ -175,9 +175,7 @@ footer {
 }
 @media (max-width: 600px) {
   .wave {
-    animation: none;
-    background: none;
-    opacity: 0;
+     display: none; /* or wave { opacity: 0; animation:none; background:none; } */
   }
 }
 
