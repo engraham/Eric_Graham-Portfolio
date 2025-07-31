@@ -174,15 +174,11 @@ footer {
   }
 }
 @media (max-width: 600px) {
-  /* Hide the wave animation */
   .waves {
-    display: none;
+    display: none !important;
   }
-  
-  /* Add a subtle static gradient to body on mobile */
   body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    /* You can tweak these colors to match your site's palette */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
   }
 }
 
