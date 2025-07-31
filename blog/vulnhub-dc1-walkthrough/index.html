@@ -6,6 +6,7 @@
   <title>Exploiting VulnHub DC-1 | Eric Graham</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/blog/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     article { max-width: 700px; margin: 0 auto; padding: 2rem; }
     pre { 
@@ -23,12 +24,13 @@
     .annotation { color: #ff5555; font-style: italic; }
     .lesson { background: #112211; padding: 1rem; border-left: 3px solid #ff5555; }
     .lessons-learned {
-      background-color: #2c3e50;
-      color: #ecf0f1;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
       padding: 20px;
       border-radius: 8px;
       line-height: 1.6;
       font-size: 1.1em;
+      box-shadow: 0 0 10px #00ffcc33;
     }
     .container {
       max-width: 800px;
@@ -37,11 +39,18 @@
       position: relative;
       z-index: 2;
     }
-
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div id="app">
+    <main class="relative z-10 min-h-screen text-white bg-black bg-opacity-70 backdrop-blur-md p-6">
+      <div class="container">
   <header>
     <h1>Eric Graham</h1>
     <p>Penetration Testing & Application Security Portfolio</p>
@@ -129,5 +138,7 @@ run</code></pre>
     <p>© 2025 Eric Graham</p>
   </footer>
     </div>
+    </main>
+  </div>
 </body>
 </html>
