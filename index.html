@@ -5,12 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Eric Graham | Cybersecurity Portfolio</title>
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
       background-color: #0a0a0a;
       color: #00ffcc;
       font-family: 'Courier New', Courier, monospace;
-      margin: 0;
+    }
+
+    body {
+      position: relative;
+      z-index: 1;
       padding: 2rem;
+    }
+
+    /* 🌊 Softer & Slower Waves */
+    .waves {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .wave {
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      background-repeat: repeat-x;
+      background-position: 0 bottom;
+      animation: waveMove 30s linear infinite;
+      opacity: 0.1;
+    }
+
+    .wave1 {
+      background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><path fill="%23666" d="M0,50 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,00 L0,0 Z"/></svg>');
+      animation-duration: 30s;
+      bottom: 0;
+    }
+
+    .wave2 {
+      background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><path fill="%23555" d="M0,50 C150,0 350,100 600,50 C850,0 1050,100 1200,50 L1200,00 L0,0 Z"/></svg>');
+      animation-duration: 45s;
+      bottom: 10px;
+      opacity: 0.12;
+    }
+
+    .wave3 {
+      background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><path fill="%23444" d="M0,50 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,00 L0,0 Z"/></svg>');
+      animation-duration: 60s;
+      bottom: 20px;
+      opacity: 0.08;
+    }
+
+    @keyframes waveMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ✅ Your Existing Styles */
+    header, nav, section, footer {
+      position: relative;
+      z-index: 2;
     }
 
     header {
@@ -80,7 +141,7 @@
       text-decoration: none;
       transition: all 0.3s ease;
     }
-    
+
     a.lab-link:visited {
       color: #00ffcc;
     }
@@ -113,16 +174,15 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
-    
+
     #certifications a:visited {
       color: #00ffcc;
     }
-    
+
     #certifications a:hover {
       color: #33ffee;
       text-decoration: underline;
-     }
-
+    }
 
     footer {
       text-align: center;
@@ -143,6 +203,14 @@
 </head>
 <body>
 
+  <!-- 🔹 Animated Wave Background -->
+  <div class="waves">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </div>
+
+  <!-- 🔹 Main Content -->
   <header>
     <h1>Eric Graham</h1>
     <p>Penetration Testing & Application Security Portfolio</p>
@@ -158,10 +226,9 @@
     <p>
       Welcome to my cybersecurity portfolio.<br><br> 
       I'm Eric Graham — I’m a junior cybersecurity professional with a background in web development and IT support, now focused on offensive security, application security, and vulnerability assessment.<br><br>
-
-This portfolio highlights my hands-on experience conducting web and network penetration tests in a home lab environment, including testing for OWASP Top 10 vulnerabilities, performing privilege escalation, and writing clear, actionable reports.<br><br> The included labs showcase skills in threat modeling, secure coding awareness, and vulnerability remediation — all critical to supporting AppSec, SOC, and Vulnerability Management teams.
-
-While my current strength is in offensive techniques, <br><br>I’m focused on using those skills to strengthen security posture through testing, reporting, and collaboration with development and security teams.
+      This portfolio highlights my hands-on experience conducting web and network penetration tests in a home lab environment, including testing for OWASP Top 10 vulnerabilities, performing privilege escalation, and writing clear, actionable reports.<br><br> 
+      The included labs showcase skills in threat modeling, secure coding awareness, and vulnerability remediation — all critical to supporting AppSec, SOC, and Vulnerability Management teams.<br><br>
+      While my current strength is in offensive techniques, I’m focused on using those skills to strengthen security posture through testing, reporting, and collaboration with development and security teams.
     </p>
   </section>
 
@@ -169,7 +236,6 @@ While my current strength is in offensive techniques, <br><br>I’m focused on u
     <h2>AppSec Labs</h2>
     <ul>
       <li><a class="lab-link" href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/AppSec-Labs/dvwa_xss_csrf_fileupload.md" target="_blank" rel="noopener noreferrer">dvwa_xss_csrf_fileupload.md</a></li>
-      <!-- Add more as you finish -->
     </ul>
   </section>
 
@@ -179,51 +245,31 @@ While my current strength is in offensive techniques, <br><br>I’m focused on u
       <li><a class="lab-link" href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/metasploitable2_vsftpd-samba.md" target="_blank" rel="noopener noreferrer">metasploitable2_vsftpd-samba.md</a></li>
       <li><a class="lab-link" href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/VulnHub%20—%20DC.md" target="_blank" rel="noopener noreferrer">VulnHub — DC.md</a></li>
       <li><a class="lab-link" href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/Pentest-Labs/set_phishing_simulation.md" target="_blank" rel="noopener noreferrer">set_phishing_simulation.md</a></li>
-      <!-- Add more pentest labs here -->
     </ul>
   </section>
 
- <section id="certifications" class="bg-gray-900 text-white py-10 px-6 md:px-12">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-teal-300">Certifications</h2>
-    <ul class="space-y-6">
-          <li class="flex items-center">
-      <a href="https://www.credly.com/badges/0ef6a13f-ea08-41f7-b13c-9d870d019d2e/public_url" 
-         target="_blank" rel="noopener noreferrer" 
-         class="flex items-center hover:underline hover:text-teal-400 transition-all">
-        <img src="https://images.credly.com/size/110x110/images/74650a75-8451-400a-8536-92d792c5184a/security-.png"
-             alt="CompTIA PenTest+ Badge"
-             class="h-14 w-14 mr-4">
-        <div>
-          <p class="font-semibold text-lg">CompTIA PenTest+</p>
-          <p class="text-sm text-gray-400">Issued 2025</p>
-        </div>
-      </a>
-    </li>
-
-      <li class="flex items-center">
-        <a href="/THM-1MDTI6HCB3.pdf" 
-           target="_blank" rel="noopener noreferrer" 
-           class="flex items-center hover:underline hover:text-teal-400 transition-all">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/TryHackMe_Logo.png"
-               alt="TryHackMe Certificate"
-               class="h-14 w-14 mr-4">
-          <div>
-            <p class="font-semibold text-lg">TryHackMe – Jr Penetration Tester</p>
-            <p class="text-sm text-gray-400">Issued Mar 2025</p>
-          </div>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        <a href="https://www.credly.com/badges/0ef6a13f-ea08-41f7-b13c-9d870d019d2e/public_url" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.credly.com/size/110x110/images/74650a75-8451-400a-8536-92d792c5184a/security-.png" alt="PenTest+ Badge" style="height: 50px; vertical-align: middle;">
+          CompTIA PenTest+ (2025)
+        </a>
+      </li>
+      <li>
+        <a href="/THM-1MDTI6HCB3.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/TryHackMe_Logo.png" alt="TryHackMe" style="height: 40px; vertical-align: middle;">
+          TryHackMe – Jr Penetration Tester (Mar 2025)
         </a>
       </li>
     </ul>
-  </div>
-</section>
+  </section>
 
-  
   <footer>
-    <p>📧 <a href="mailto:ericngraham00@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> |
-       💼 <a href="https://github.com/engraham/Eric_Graham-Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a> |
-       🔗 <a href="https://www.linkedin.com/in/eric-graham-91b017a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
+    <p>📧 <a href="mailto:ericngraham00@gmail.com">Email</a> |
+       💼 <a href="https://github.com/engraham/Eric_Graham-Portfolio">GitHub</a> |
+       🔗 <a href="https://www.linkedin.com/in/eric-graham-91b017a0/">LinkedIn</a></p>
     <p>© 2025 Eric Graham</p>
   </footer>
 
