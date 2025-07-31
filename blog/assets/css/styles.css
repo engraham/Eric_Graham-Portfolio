@@ -174,8 +174,11 @@ footer {
   }
 }
 @media (max-width: 600px) {
-  .waves {
-    display: none;
+  .wave {
+    animation: none;
+    background: none;
+    opacity: 0;
   }
 }
+
 
