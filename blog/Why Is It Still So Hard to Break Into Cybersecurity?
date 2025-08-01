@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <base href="https://ericgraham-portfolio.netlify.app/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Exploring the gap between cybersecurity hiring needs and candidate access." />
+  <title>Why Is It Still So Hard to Break Into Cybersecurity?</title>
+  <link rel="stylesheet" href="https://ericgraham-portfolio.netlify.app/blog/assets/css/styles.css?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  article { max-width: 700px; margin: 0 auto; padding: 2rem; }
+    pre { 
+      background: #111; 
+      padding: 1rem; 
+      overflow-x: auto;
+      border-left: 3px solid #00ffcc;
+    }
+    img { 
+      max-width: 100%; 
+      border: 1px solid #00ff00;
+      margin: 1rem 0;
+    }
+    h2 { border-bottom: 2px solid #00ffcc; }
+    .annotation { color: #ff5555; font-style: italic; }
+    .lesson { background: #112211; padding: 1rem; border-left: 3px solid #ff5555; }
+    .lessons-learned {
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      line-height: 1.6;
+      font-size: 1.1em;
+      box-shadow: 0 0 10px #00ffcc33;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1, h2 {
+      color: #0a4d8c;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #0a4d8c;
+      padding-left: 1rem;
+      margin-left: 0;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+    <div class="waves">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </div>
+  <main class="relative z-10 min-h-screen text-white bg-black bg-opacity-70 backdrop-blur-md p-6">
+      <div class="container">
+     <header>
+    <h1>Eric Graham</h1>
+    <p>Penetration Testing & Application Security Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="/#appsec">AppSec Labs</a> |
+    <a href="/#pentest">PenTest Labs</a> |
+    <a href="/blog">Blog</a> |
+    <a href="https://github.com/engraham/Eric_Graham-Portfolio/blob/main/README.md" target="_blank">About</a>
+  </nav>
+  <article>
+  <h1>Why Is It Still So Hard to Break Into Cybersecurity?</h1>
+
+  <blockquote>
+    “Why is it still so hard for cyber talent to break in — when attacks keep rising?”
+  </blockquote>
+
+  <p>Cybersecurity breaches are growing more frequent and more costly. Every week, headlines spotlight another organization suffering a ransomware attack, data leak, or critical system compromise. But despite this urgent need, skilled candidates are still struggling to enter the field — especially at the junior level.</p>
+
+  <p>It raises a hard question: <strong>If the threat is growing, why aren’t we empowering more defenders?</strong></p>
+
+  <hr />
+
+  <h2>The Disconnect Between Demand and Hiring</h2>
+
+  <p>There are more cybersecurity roles open than qualified professionals — on paper. But many entry- and mid-level candidates are hitting walls:</p>
+
+  <ul>
+    <li>Endless resume black holes due to rigid Applicant Tracking Systems (ATS)</li>
+    <li>Job descriptions asking for 3–5 years of experience for “junior” roles</li>
+    <li>Positions left open for months, or posted as “ghost jobs” that never hire</li>
+    <li>Lack of clarity on what experience actually matters — lab work? degrees? certs?</li>
+  </ul>
+
+  <p>Meanwhile, hiring managers themselves are often stretched thin. Some teams don’t have the bandwidth to train new staff. Others are buried in incident response. And with burnout rising in the industry, the talent pipeline is leaking at both ends.</p>
+
+  <hr />
+
+  <h2>Candidates Are Doing More Than Ever</h2>
+
+  <p>Today’s aspiring cybersecurity professionals are not idle. Many of us are:</p>
+
+  <ul>
+    <li>Completing hands-on labs and building public portfolios</li>
+    <li>Writing documentation, blog posts, and walkthroughs</li>
+    <li>Earning certifications (often self-funded)</li>
+    <li>Participating in Capture the Flag (CTF) competitions</li>
+    <li>Networking, mentoring, and even volunteering</li>
+  </ul>
+
+  <p>Yet many of these real-world skills are ignored in hiring pipelines that prioritize checkbox requirements over demonstrable ability.</p>
+
+  <hr />
+
+  <h2>So… How Are You Addressing This?</h2>
+
+  <p>The gap isn’t just technical — it’s structural. And no one group can fix it alone. That’s why I’m asking:</p>
+
+  <blockquote>
+    🎯 <strong>If you're hiring, managing, or mentoring in cybersecurity: how are you helping close the gap between demand and access?</strong>
+  </blockquote>
+
+  <p>Let’s share what’s working — and what needs to change.</p>
+
+  <p><em>Originally posted on <a href="https://www.linkedin.com/posts/eric-graham-91b017a0_cybersecurity-infosec-hiring-activity-7356840418971377664-8kD1" target="_blank">LinkedIn</a>.</em></p>
+
+  </article>
+
+  <footer>
+    <p>📧 <a href="mailto:ericngraham00@gmail.com">Email</a> | 💼 <a href="https://github.com/engraham">GitHub</a> | 🔗 <a href="https://linkedin.com/in/eric-graham">LinkedIn</a></p>
+    <p>© 2025 Eric Graham</p>
+  </footer>
+    </div>
+    </main>
+  </div>
+  </body>
+</html>
+
