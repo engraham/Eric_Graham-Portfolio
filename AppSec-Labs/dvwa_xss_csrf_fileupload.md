@@ -1,5 +1,13 @@
 # Lab Report: DVWA - Chaining XSS, CSRF, and File Upload for RCE
 
+## Executive Summary
+
+**This engagement demonstrated how a chain of low-severity web application vulnerabilities can escalate to full system compromise. By exploiting Stored XSS, CSRF, and an insecure file upload mechanism, the lab achieved remote code execution (RCE) on the DVWA application.**
+
+**The lab highlights the risk of chained attacks in web applications, where individually minor issues (e.g., XSS, CSRF) can combine to create a critical security breach. In a production environment, such vulnerabilities could allow attackers to steal session data, escalate privileges, and execute arbitrary commands on the server.**
+
+---
+
 - Lab Type: Web Application Exploitation  
 - Skill Level: Beginner–Intermediate  
 - Focus: XSS, CSRF, File Upload, RCE  
