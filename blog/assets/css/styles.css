@@ -1,59 +1,76 @@
 /* === Global Reset === */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #121212, #1f1f1f);
-  color: #f0f0f0;
-  min-height: 100vh;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 1rem 0;
-  padding: 1rem;
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-ul li a {
-  color: #00f0ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-ul li:hover {
-  background-color: #3a3a3a;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === Base Layout === */
-body {
-  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-  color: #e0e0e0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  color: #f0f0f0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   line-height: 1.6;
-  padding: 2rem;
+  padding: 0;
 }
 
-/* === Typography === */
+/* === Top Hero Section === */
+header {
+  max-width: 90%;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* === Navigation === */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00f0ff;
+}
+
+/* === Sections & Articles === */
+section, article {
+  max-width: 90%;
+  margin: 0 auto 3rem auto;
+  padding: 2rem 1rem;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,255,204,0.2);
+}
+
+/* === Headings === */
 h1, h2, h3 {
   color: #00ffcc;
   margin-bottom: 1rem;
 }
 
+/* === Paragraphs === */
 p {
-  margin-bottom: 1rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* === Links === */
@@ -66,24 +83,25 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Navigation === */
-nav {
-  margin-bottom: 2rem;
+/* === Lists === */
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-nav a {
-  margin-right: 1rem;
-  color: #00ffcc;
+li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 
-/* === Article/Blog Container === */
-article {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
-  max-width: 800px;
-  margin: auto;
+ul li a {
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+ul li:hover {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 6px;
 }
 
 /* === Code Blocks === */
@@ -104,33 +122,25 @@ img {
   margin: 1rem 0;
 }
 
-/* === Lists === */
-ul, ol {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #999;
-  margin-top: 4rem;
-}
-
-/* === Highlight Section (e.g., Lessons Learned) === */
+/* === Highlight / Lessons Learned === */
 .highlight {
-  background-color: rgba(0, 255, 204, 0.1);
+  background-color: rgba(0,255,204,0.1);
   padding: 1rem;
   border-left: 4px solid #00ffcc;
   margin: 2rem 0;
   border-radius: 8px;
 }
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 4rem;
+}
+
+/* === Waves / Animated Background === */
 .waves {
   position: fixed;
   top: 0;
@@ -145,40 +155,28 @@ footer {
   position: absolute;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 255, 255, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,255,255,0.08) 0%, transparent 70%);
   animation: waveMove 12s linear infinite;
   transform: rotate(0deg);
   opacity: 0.15;
   mix-blend-mode: screen;
 }
 
-.wave1 {
-  animation-delay: 0s;
-}
-.wave2 {
-  animation-delay: 2s;
-}
-.wave3 {
-  animation-delay: 4s;
-}
+.wave1 { animation-delay: 0s; }
+.wave2 { animation-delay: 2s; }
+.wave3 { animation-delay: 4s; }
 
 @keyframes waveMove {
-  0% {
-    transform: rotate(0deg) translateY(0);
-  }
-  50% {
-    transform: rotate(180deg) translateY(-10px);
-  }
-  100% {
-    transform: rotate(360deg) translateY(0);
-  }
-}
-@media (max-width: 70%;) {
-  .waves {
-    display: none !important;
-  }
-  body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
-  }
+  0%   { transform: rotate(0deg) translateY(0); }
+  50%  { transform: rotate(180deg) translateY(-10px); }
+  100% { transform: rotate(360deg) translateY(0); }
 }
 
+/* === Responsive === */
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
+  section, article { padding: 1.5rem; }
+  nav a { margin: 0 0.5rem; }
+  .waves { display: none !important; }
+}
