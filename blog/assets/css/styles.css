@@ -173,7 +173,7 @@ footer {
     transform: rotate(360deg) translateY(0);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 70%;) {
   .waves {
     display: none !important;
   }
