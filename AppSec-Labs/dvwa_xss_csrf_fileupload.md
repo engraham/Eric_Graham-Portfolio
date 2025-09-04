@@ -8,6 +8,18 @@
 
 ---
 
+## Key Takeaways / Skills Demonstrated
+
+- Exploitation of Stored XSS for session hijacking.
+
+- CSRF exploitation to force credential changes.
+
+- File upload to achieve remote code execution.
+
+- Demonstrates chaining of low-severity vulnerabilities for high-impact attacks.
+
+---
+
 - Lab Type: Web Application Exploitation  
 - Skill Level: Beginner–Intermediate  
 - Focus: XSS, CSRF, File Upload, RCE  
